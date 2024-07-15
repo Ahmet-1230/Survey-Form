@@ -91,3 +91,23 @@ textarea {
     background-color: white;
     color: #ff0000;
 }
+
+footer{
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+#sing{
+    color: white;
+    background-color: #ff0000;
+    width: 160px;
+    height: 45px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+}
+
+nav{
+    text-align: right;
+}

@@ -1,119 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="Style.css" />
-    <title>Netflix Survey Form</title>
-  </head>
 
-  <body>
-    <div id="container">
-      <header id="header">
-        <h1 id="baslık">NET<span>FLİX</span></h1>
-        <h3 id="description">
-          Thank you for signing up to Netflix. Tell me more about yourself
-        </h3>
-      </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="Style.css" />
+  <title>Netflix Survey Form</title>
+</head>
 
-      <section id="survey-form-container">
-        <form action="result.html" method="get">
-          <div class="input-box">
-            <label for="name">Name</label>
-            <br />
-            <input
-              type="text"
-              name="name"
-              id="name"
-              placeholder="Enter your name"
-            />
-          </div>
-          <div class="input-box">
-            <label for="age">Age</label>
-            <br />
-            <input type="number" name="" id="age" placeholder="age" />
-          </div>
-          <div class="input-box">
-            <label for="email">Email</label>
-            <br />
-            <input
-              type="email"
-              name="email"
-              id="email"
-              placeholder="enter your email"
-            />
-          </div>
-          <div class="input-box"></div>
-          <div class="input-box">
-            <label for="content">Content Type</label>
-            <select name="content" id="dropdown">
-              <option value="series">Series</option>
-              <option value="movie">Movies</option>
-              <option value="TV_Shows">TV Shows</option>
-            </select>
-          </div>
+<body>
+  <div id="container">
+    <header id="header">
+      <h1 id="baslık">NET<span>FLİX</span></h1>
+      <h3 id="description">
+        Thank you for signing up to Netflix. Tell me more about yourself
+      </h3>
+      <nav>
+        <button id="sing">Sing in</button>
+        <button id="sing">Sing up</button>
+      </nav>
+    </header>
 
-          <div class="input-box">
-            <label for="">Movie Type</label>
-            <br />
-            <input
-              type="checkbox"
-              name="movie"
-              id="first-check"
-              value="Comedy"
-            />
-            <label for="second-check">Action</label>
-            <br />
-            <input
-              type="checkbox"
-              name="movie"
-              id="second-check"
-              value="Action"
-            />
-            <label for="first-check">Comedy</label>
-            <br />
-            <input
-              type="checkbox"
-              name="movie"
-              id="third-check"
-              value="Romance"
-            />
-            <label for="third-check">Romance</label>
-          </div>
+    
 
-          <div class="input-box">
-            <label for="">Gender</label>
-            <br />
-            <input type="radio" name="gender" id="first-radio" value="Male" />
-            <label for="first-radio">Male</label>
-            <br />
-            <input
-              type="radio"
-              name="gender"
-              id="second-radio"
-              value="Female"
-            />
-            <label for="second-radio">Female</label>
-            <br />
-            <input type="radio" name="gender" id="third-radio" value="Other" />
-            <label for="third-radio">Other</label>
-          </div>
+    <section id="survey-form-container">
+      <form action="result.html" method="get">
+        <div class="input-box">
+          <label for="name">Name</label>
+          <br />
+          <input type="text" name="name" id="name" placeholder="Enter your name" />
+        </div>
+        <div class="input-box">
+          <label for="age">Age</label>
+          <br />
+          <input type="number" name="" id="age" placeholder="age" />
+        </div>
+        <div class="input-box">
+          <label for="email">Email</label>
+          <br />
+          <input type="email" name="email" id="email" placeholder="enter your email" />
+        </div>
+        <div class="input-box"></div>
+        <div class="input-box">
+          <label for="content">Content Type</label>
+          <select name="content" id="dropdown">
+            <option value="series">Series</option>
+            <option value="movie">Movies</option>
+            <option value="TV_Shows">TV Shows</option>
+          </select>
+        </div>
 
-          <div class="input-box">
-            <label for="feedback">Feedback</label><br />
-            <textarea name="feedback" id="feedback"></textarea>
-          </div>
+        <div class="input-box">
+          <label for="">Movie Type</label>
+          <br />
+          <input type="checkbox" name="movie" id="first-check" value="Comedy" />
+          <label for="second-check">Action</label>
+          <br />
+          <input type="checkbox" name="movie" id="second-check" value="Action" />
+          <label for="first-check">Comedy</label>
+          <br />
+          <input type="checkbox" name="movie" id="third-check" value="Romance" />
+          <label for="third-check">Romance</label>
+        </div>
 
-          <div class="form-submit">
-            <button type="submit" id="form-button">Send</button>
-          </div>
-        </form>
-      </section>
+        <div class="input-box">
+          <label for="">Gender</label>
+          <br />
+          <input type="radio" name="gender" id="first-radio" value="Male" />
+          <label for="first-radio">Male</label>
+          <br />
+          <input type="radio" name="gender" id="second-radio" value="Female" />
+          <label for="second-radio">Female</label>
+          <br />
+          <input type="radio" name="gender" id="third-radio" value="Other" />
+          <label for="third-radio">Other</label>
+        </div>
 
-      <footer>
-        &#169
-      </footer>
+        <div class="input-box">
+          <label for="feedback">Feedback</label><br />
+          <textarea name="feedback" id="feedback"></textarea>
+        </div>
 
-    </div>
-  </body>
+        <div class="form-submit">
+          <button type="submit" id="form-button">Send</button>
+        </div>
+      </form>
+    </section>
+
+    <footer>
+      &#169Netflix coprigta saklıdır 2024
+    </footer>
+
+  </div>
+</body>
+
 </html>
